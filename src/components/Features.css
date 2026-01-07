@@ -1,0 +1,338 @@
+/* Features Section */
+.features {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #F0FDF4 0%, #ffffff 100%);
+    position: relative;
+  }
+  
+  .features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section Header */
+  .features-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  /* Features Grid */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Feature Card */
+  .feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.2);
+    border-color: #10B981;
+  }
+  
+  /* Feature Icon */
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #F0FDF4 0%, #D1FAE5 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover .feature-icon {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  .feature-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Feature Content */
+  .feature-content {
+    flex: 1;
+  }
+  
+  .feature-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-content p {
+    color: #6B7280;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Topics Tags */
+  .feature-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .topic-tag {
+    background: #F0FDF4;
+    color: #059669;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid #D1FAE5;
+  }
+  
+  /* Feature Meta */
+  .feature-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E5E7EB;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6B7280;
+    font-size: 0.85rem;
+  }
+  
+  .meta-item svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+  
+  /* Feature Button */
+  .feature-btn {
+    width: 100%;
+    background: transparent;
+    color: #10B981;
+    border: 2px solid #10B981;
+    padding: 0.9rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .feature-btn:hover {
+    background: #10B981;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+  }
+  
+  .btn-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-btn:hover .btn-arrow {
+    transform: translateX(5px);
+  }
+  
+  /* Bottom CTA */
+  .features-cta {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(16, 185, 129, 0.3);
+  }
+  
+  .features-cta h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.8rem;
+  }
+  
+  .features-cta p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background: white;
+    color: #10B981;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Tablet Responsiveness */
+  @media screen and (max-width: 968px) {
+    .features {
+      padding: 5rem 1.5rem;
+    }
+  
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  
+    .feature-card {
+      padding: 2rem;
+    }
+  
+    .feature-content h3 {
+      font-size: 1.3rem;
+    }
+  
+    .features-cta h3 {
+      font-size: 1.7rem;
+    }
+  
+    .features-cta p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    .features {
+      padding: 4rem 1rem;
+    }
+  
+    .features-header {
+      margin-bottom: 3rem;
+    }
+  
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+  
+    .feature-card {
+      padding: 1.8rem;
+    }
+  
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .feature-icon svg {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .feature-content h3 {
+      font-size: 1.25rem;
+    }
+  
+    .feature-content p {
+      font-size: 0.9rem;
+    }
+  
+    .feature-topics {
+      gap: 0.5rem;
+    }
+  
+    .topic-tag {
+      font-size: 0.75rem;
+      padding: 0.35rem 0.7rem;
+    }
+  
+    .feature-meta {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  
+    .features-cta {
+      padding: 2rem 1.5rem;
+    }
+  
+    .features-cta h3 {
+      font-size: 1.5rem;
+    }
+  
+    .features-cta p {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .cta-button {
+      width: 100%;
+      padding: 0.9rem 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .features {
+      padding: 3rem 1rem;
+    }
+  
+    .feature-card {
+      padding: 1.5rem;
+    }
+  
+    .feature-icon {
+      width: 55px;
+      height: 55px;
+    }
+  
+    .feature-icon svg {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .feature-content h3 {
+      font-size: 1.15rem;
+    }
+  
+    .feature-meta {
+      font-size: 0.8rem;
+    }
+  
+    .meta-item svg {
+      width: 16px;
+      height: 16px;
+    }
+  
+    .features-cta h3 {
+      font-size: 1.3rem;
+    }
+  
+    .features-cta p {
+      font-size: 0.9rem;
+    }
+  }
